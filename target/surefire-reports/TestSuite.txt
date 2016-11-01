@@ -1,0 +1,138 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 36.071 sec <<< FAILURE!
+loginTest(Tests.TestTest)  Time elapsed: 0.561 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"i[class=\"fa fa-floppy-o\"]"}
+Command duration or timeout: 537 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AlinU', ip: '172.20.1.205', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 31fcd6c2-5d8b-4b54-a360-d3ad4ee35f9d
+*** Element info: {Using=css selector, value=i[class="fa fa-floppy-o"]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at TestFramework.EDiscovery.clickSave(EDiscovery.java:115)
+	at Tests.TestTest.loginTest(TestTest.java:12)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"i[class=\"fa fa-floppy-o\"]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AlinU', ip: '172.20.1.205', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Alin/AppData/Local/Temp/anonymous3197786013722386167webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/Alin/AppData/Local/Temp/anonymous3197786013722386167webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Alin/AppData/Local/Temp/anonymous3197786013722386167webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Alin/AppData/Local/Temp/anonymous3197786013722386167webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/Alin/AppData/Local/Temp/anonymous3197786013722386167webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+
+failingTest1(Tests.FailingTest1)  Time elapsed: 10.891 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for element to be clickable: By.xpath: /html/body/div/div[2]/div[2]/div/div/div[1]/div/div/div/ul/li[2]/div/div
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AlinU', ip: '172.20.1.205', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 31fcd6c2-5d8b-4b54-a360-d3ad4ee35f9d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at TestFramework.FirefoxBrowser.waitForElementToBeClickable(FirefoxBrowser.java:80)
+	at TestFramework.Ingestion.advancedMasterField(Ingestion.java:396)
+	at Tests.FailingTest1.failingTest1(FailingTest1.java:16)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"/html/body/div/div[2]/div[2]/div/div/div[1]/div/div/div/ul/li[2]/div/div"}
+Command duration or timeout: 45 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AlinU', ip: '172.20.1.205', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 31fcd6c2-5d8b-4b54-a360-d3ad4ee35f9d
+*** Element info: {Using=xpath, value=/html/body/div/div[2]/div[2]/div/div/div[1]/div/div/div/ul/li[2]/div/div}
+	at sun.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:653)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:646)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"/html/body/div/div[2]/div[2]/div/div/div[1]/div/div/div/ul/li[2]/div/div"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AlinU', ip: '172.20.1.205', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Alin/AppData/Local/Temp/anonymous3197786013722386167webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/Alin/AppData/Local/Temp/anonymous3197786013722386167webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Alin/AppData/Local/Temp/anonymous3197786013722386167webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Alin/AppData/Local/Temp/anonymous3197786013722386167webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/Alin/AppData/Local/Temp/anonymous3197786013722386167webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+
+failingTest2(Tests.FailingTest2)  Time elapsed: 10.906 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for element to be clickable: By.xpath: /html/body/div/div[2]/div[2]/div/div/div[1]/div/div/div/ul/li[2]/div/div
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AlinU', ip: '172.20.1.205', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 31fcd6c2-5d8b-4b54-a360-d3ad4ee35f9d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at TestFramework.FirefoxBrowser.waitForElementToBeClickable(FirefoxBrowser.java:80)
+	at TestFramework.Ingestion.advancedMasterField(Ingestion.java:396)
+	at Tests.FailingTest2.failingTest2(FailingTest2.java:16)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"/html/body/div/div[2]/div[2]/div/div/div[1]/div/div/div/ul/li[2]/div/div"}
+Command duration or timeout: 45 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AlinU', ip: '172.20.1.205', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 31fcd6c2-5d8b-4b54-a360-d3ad4ee35f9d
+*** Element info: {Using=xpath, value=/html/body/div/div[2]/div[2]/div/div/div[1]/div/div/div/ul/li[2]/div/div}
+	at sun.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:653)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:646)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"/html/body/div/div[2]/div[2]/div/div/div[1]/div/div/div/ul/li[2]/div/div"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AlinU', ip: '172.20.1.205', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Alin/AppData/Local/Temp/anonymous3197786013722386167webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/Alin/AppData/Local/Temp/anonymous3197786013722386167webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Alin/AppData/Local/Temp/anonymous3197786013722386167webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Alin/AppData/Local/Temp/anonymous3197786013722386167webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/Alin/AppData/Local/Temp/anonymous3197786013722386167webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+

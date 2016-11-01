@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AddVehicle.iml" filepath="$PROJECT_DIR$/AddVehicle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Archive2AzureAutomation.iml" filepath="$PROJECT_DIR$/Archive2AzureAutomation.iml" />
     </modules>
   </component>
 </project>

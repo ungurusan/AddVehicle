@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="happyFlowSuite">
+    <test name="Login">
+        <classes>
+            <class name="Tests.NewIndexField" />
+            <class name="Tests.NewCabinetType" />
+            <class name="Tests.IngestionCreate" />
+        </classes>
+    </test>
+</suite>

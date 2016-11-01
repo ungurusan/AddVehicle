@@ -1,0 +1,7 @@
+Tests\NewCabinetType.class
+Tests\FailingTest1.class
+Tests\IngestionCreate.class
+Tests\TestConfig.class
+Tests\TestTest.class
+Tests\FailingTest2.class
+Tests\NewIndexField.class

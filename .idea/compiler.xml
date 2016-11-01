@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="AddVehicle" />
+        <module name="Archive2AzureAutomation" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="AddVehicle" target="1.5" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="Archive2AzureAutomation" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
